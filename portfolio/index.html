@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Fahmi Yusuf — Informatics Student & Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Grid & Glow Elements -->
+    <div class="bg-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Header & Navbar -->
+    <header id="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-symbol">&lt;</span>AliFahmi<span class="logo-symbol">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn-glow-sm">Let's Talk</a>
+                <button id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content" data-aos="fade-up">
+                    <div class="hero-badge">
+                        <span class="status-dot"></span> Available for Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Ali Fahmi Yusuf</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span id="typed-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Passionate Informatics student specializing in robust software engineering, scalable backend architecture, and intelligent AI-driven systems. Building high-performance digital experiences with clean code.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:alifahmi@example.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="code-window glass-card">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="window-title">developer.go</span>
+                        </div>
+                        <div class="window-body">
+                            <pre><code><span class="keyword">package</span> main
+
+<span class="keyword">import</span> <span class="string">"fmt"</span>
+
+<span class="keyword">type</span> <span class="type">Developer</span> <span class="keyword">struct</span> {
+    Name     <span class="type">string</span>
+    Major    <span class="type">string</span>
+    Focus    []<span class="type">string</span>
+    Passion  <span class="type">string</span>
+}
+
+<span class="keyword">func</span> main() {
+    ali := Developer{
+        Name:    <span class="string">"Ali Fahmi Yusuf"</span>,
+        Major:   <span class="string">"Informatics"</span>,
+        Focus:   []<span class="type">string</span>{<span class="string">"Backend"</span>, <span class="string">"AI"</span>, <span class="string">"Fullstack"</span>},
+        Passion: <span class="string">"Building Scalable Systems"</span>,
+    }
+    fmt.Printf(<span class="string">"Hello, World! I'm %s\n"</span>, ali.Name)
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">&lt;about-me /&gt;</span>
+                    <h2 class="section-title">Architecting Digital Solutions</h2>
+                    <p class="section-desc">Get to know more about my background, philosophy, and technical journey.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card glass-card" data-aos="fade-right">
+                        <div class="about-avatar-wrapper">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img-box">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                        </div>
+                        <h3>Who am I?</h3>
+                        <p>
+                            I am an undergraduate student in Informatics at Universitas Teknologi Digital Indonesia with an intense fascination for software engineering architecture, database performance, and artificial intelligence integration.
+                        </p>
+                        <p>
+                            My approach combines rigorous logical problem-solving with elegant user-centric design. Whether architecting backend microservices or training machine learning pipelines, I strive for clean, maintainable, and high-performance code.
+                        </p>
+                        <div class="personal-info-list">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-val">Ali Fahmi Yusuf</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Degree:</span>
+                                <span class="info-val">Bachelor of Informatics</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-val">Indonesia</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Status:</span>
+                                <span class="info-val text-green">Open to Work & Collaborations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats-col" data-aos="fade-left">
+                        <div class="stats-grid">
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Years Learning IT</div>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Completed Projects</div>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="stat-number">1+</div>
+                                <div class="stat-label">Years Professional Exp</div>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                                <div class="stat-number">999+</div>
+                                <div class="stat-label">Cups of Coffee</div>
+                            </div>
+                        </div>
+                        <div class="philosophy-card glass-card">
+                            <h4><i class="fa-solid fa-terminal"></i> Core Philosophy</h4>
+                            <p>
+                                "Simplicity is prerequisite for reliability. Write code that computers can execute quickly and humans can understand effortlessly."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">&lt;tech-stack /&gt;</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-desc">Tools, languages, and frameworks I use to build robust applications.</p>
+                </div>
+                <div class="skills-grid">
+                    <!-- Skill Card 1 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="skill-icon-box go-bg"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="skill-info">
+                            <h4>Go (Golang)</h4>
+                            <p>High-performance backend services & APIs</p>
+                        </div>
+                        <span class="skill-badge">Backend</span>
+                    </div>
+                    <!-- Skill Card 2 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="skill-icon-box php-bg"><i class="fa-brands fa-php"></i></div>
+                        <div class="skill-info">
+                            <h4>PHP</h4>
+                            <p>Dynamic web applications & server-side logic</p>
+                        </div>
+                        <span class="skill-badge">Language</span>
+                    </div>
+                    <!-- Skill Card 3 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="skill-icon-box laravel-bg"><i class="fa-brands fa-laravel"></i></div>
+                        <div class="skill-info">
+                            <h4>Laravel</h4>
+                            <p>Robust MVC web framework & API development</p>
+                        </div>
+                        <span class="skill-badge">Framework</span>
+                    </div>
+                    <!-- Skill Card 4 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="skill-icon-box js-bg"><i class="fa-brands fa-js"></i></div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <p>Modern ES6+, DOM manipulation & interactivity</p>
+                        </div>
+                        <span class="skill-badge">Language</span>
+                    </div>
+                    <!-- Skill Card 5 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="skill-icon-box flutter-bg"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="skill-info">
+                            <h4>Flutter</h4>
+                            <p>Cross-platform mobile app development</p>
+                        </div>
+                        <span class="skill-badge">Mobile</span>
+                    </div>
+                    <!-- Skill Card 6 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="skill-icon-box firebase-bg"><i class="fa-solid fa-fire"></i></div>
+                        <div class="skill-info">
+                            <h4>Firebase</h4>
+                            <p>Realtime database, Auth & cloud functions</p>
+                        </div>
+                        <span class="skill-badge">Cloud</span>
+                    </div>
+                    <!-- Skill Card 7 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="skill-icon-box postgres-bg"><i class="fa-solid fa-database"></i></div>
+                        <div class="skill-info">
+                            <h4>PostgreSQL</h4>
+                            <p>Advanced relational database management</p>
+                        </div>
+                        <span class="skill-badge">Database</span>
+                    </div>
+                    <!-- Skill Card 8 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="450">
+                        <div class="skill-icon-box mysql-bg"><i class="fa-solid fa-server"></i></div>
+                        <div class="skill-info">
+                            <h4>MySQL</h4>
+                            <p>Structured data storage & query optimization</p>
+                        </div>
+                        <span class="skill-badge">Database</span>
+                    </div>
+                    <!-- Skill Card 9 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="skill-icon-box python-bg"><i class="fa-brands fa-python"></i></div>
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                            <p>Scripting, data analysis & automation</p>
+                        </div>
+                        <span class="skill-badge">Language</span>
+                    </div>
+                    <!-- Skill Card 10 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="550">
+                        <div class="skill-icon-box ml-bg"><i class="fa-solid fa-brain"></i></div>
+                        <div class="skill-info">
+                            <h4>Machine Learning</h4>
+                            <p>Predictive modeling & intelligent algorithms</p>
+                        </div>
+                        <span class="skill-badge">AI / ML</span>
+                    </div>
+                    <!-- Skill Card 11 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="skill-icon-box git-bg"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="skill-info">
+                            <h4>Git</h4>
+                            <p>Version control & collaborative workflows</p>
+                        </div>
+                        <span class="skill-badge">DevOps</span>
+                    </div>
+                    <!-- Skill Card 12 -->
+                    <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="650">
+                        <div class="skill-icon-box docker-bg"><i class="fa-brands fa-docker"></i></div>
+                        <div class="skill-info">
+                            <h4>Docker</h4>
+                            <p>Containerization & reproducible environments</p>
+                        </div>
+                        <span class="skill-badge">DevOps</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">&lt;featured-projects /&gt;</span>
+                    <h2 class="section-title">Recent Creations</h2>
+                    <p class="section-desc">Explore some of my flagship software products and technical implementations.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <a href="#contact" class="btn-icon" aria-label="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="project-img-placeholder ai-bg">
+                                <i class="fa-solid fa-receipt"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">AI / Machine Learning</div>
+                            <h3 class="project-title">AI Expense Analyzer</h3>
+                            <p class="project-desc">
+                                Intelligent financial assistant that automatically scans, categorizes, and provides smart insights on daily expenses using machine learning and custom parsing algorithms.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#contact" class="project-link primary"><i class="fa-solid fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <a href="#contact" class="btn-icon" aria-label="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="project-img-placeholder chat-bg">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Realtime Mobile App</div>
+                            <h3 class="project-title">Chapri Chat App</h3>
+                            <p class="project-desc">
+                                Feature-rich cross-platform real-time messaging application equipped with instant push notifications, media sharing, and secure end-to-end communication channels.
+                            </p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>Dart</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#contact" class="project-link primary"><i class="fa-solid fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <a href="#contact" class="btn-icon" aria-label="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="project-img-placeholder os-bg">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Systems Engineering</div>
+                            <h3 class="project-title">AliOS</h3>
+                            <p class="project-desc">
+                                Experimental lightweight browser-based operating system simulator featuring custom window management, terminal emulator, file explorer, and modular apps.
+                            </p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#contact" class="project-link primary"><i class="fa-solid fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <a href="#contact" class="btn-icon" aria-label="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="project-img-placeholder finance-bg">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Web Application</div>
+                            <h3 class="project-title">Finance Tracker</h3>
+                            <p class="project-desc">
+                                Comprehensive personal finance management platform with interactive budgeting charts, transaction tagging, multi-currency support, and exportable financial reports.
+                            </p>
+                            <div class="project-tech">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#contact" class="project-link primary"><i class="fa-solid fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">&lt;career-path /&gt;</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-desc">My professional journey in software engineering and web development.</p>
+                </div>
+                <div class="timeline-wrapper">
+                    <div class="timeline-item glass-card" data-aos="fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <div class="timeline-role-header">
+                                <h3>Junior Web Developer</h3>
+                                <span class="company-badge">PT Global Intermedia Nusantara</span>
+                            </div>
+                            <p class="timeline-location"><i class="fa-solid fa-location-dot"></i> Indonesia</p>
+                            <p class="timeline-desc">
+                                Developed and maintained enterprise web applications with a primary focus on backend architecture and data management. Spearheaded the implementation of the <strong>Laravel Student Data Management System</strong>, streamlining record-keeping and boosting administrative workflow efficiency.
+                            </p>
+                            <ul class="timeline-highlights">
+                                <li>Designed robust MVC controllers and Eloquent ORM relationships in Laravel.</li>
+                                <li>Optimized database queries and secured user authentication portals.</li>
+                                <li>Collaborated with UI/UX teams to deliver responsive, user-friendly dashboards.</li>
+                            </ul>
+                            <div class="project-tech mt-3">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">&lt;academic /&gt;</span>
+                    <h2 class="section-title">Education Background</h2>
+                    <p class="section-desc">Formal academic foundation in computer science and technology.</p>
+                </div>
+                <div class="education-grid">
+                    <div class="education-card glass-card" data-aos="fade-right">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-info">
+                            <span class="edu-year">Ongoing / Bachelor</span>
+                            <h3>Bachelor of Informatics</h3>
+                            <h4>Universitas Teknologi Digital Indonesia</h4>
+                            <p class="edu-desc">
+                                Focused on core computer science fundamentals, algorithm design, software engineering methodologies, database systems, artificial intelligence, and network architecture.
+                            </p>
+                            <div class="edu-status-pill">
+                                <i class="fa-solid fa-circle-check"></i> Active Student
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">&lt;get-in-touch /&gt;</span>
+                    <h2 class="section-title">Let's Build Something Together</h2>
+                    <p class="section-desc">Have a project in mind or want to discuss opportunities? Drop a message!</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info glass-card" data-aos="fade-right">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out through any of these channels or fill out the contact form. I'm always open to discussing new ideas, projects, or collaborations.</p>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:alifahmi@example.com" class="contact-method-item">
+                                <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div class="method-details">
+                                    <span>Email Me</span>
+                                    <strong>alifahmi@example.com</strong>
+                                </div>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="contact-method-item">
+                                <div class="method-icon"><i class="fa-brands fa-github"></i></div>
+                                <div class="method-details">
+                                    <span>GitHub Profile</span>
+                                    <strong>github.com/alifahmi</strong>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="contact-method-item">
+                                <div class="method-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <div class="method-details">
+                                    <span>LinkedIn Network</span>
+                                    <strong>linkedin.com/in/alifahmi</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Project Inquiry / Collaboration" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div id="formMessage" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#home">&lt;AliFahmi/&gt;</a>
+            </div>
+            <p class="footer-text">Building the future with clean code and intelligent solutions.</p>
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="copyright">© 2026 Ali Fahmi Yusuf. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
