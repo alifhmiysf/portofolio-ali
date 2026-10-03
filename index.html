@@ -37,37 +37,54 @@
        NAVBAR
   ========================== -->
   <nav>
-    <div class="container nav">
+  <div class="container nav">
 
-      <a class="logo" href="#home">
-        <span>Ali</span> Fahmi Yusuf
-      </a>
+    <a href="#home" class="logo">
+      Ali Fahmi <span>Yusuf</span>
+    </a>
 
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certifications</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+    <div class="links">
 
-        <button class="theme-btn" id="themeToggle">
-          Light / Dark
-        </button>
-      </div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
 
-      <div class="nav-mobile-actions">
-        <button class="theme-btn" id="themeToggleMobile">
-          L/D
-        </button>
-
-        <button class="menu" id="menuBtn">
-          Menu
-        </button>
-      </div>
+      <!-- Dark / Light berada di dalam hamburger -->
+      <button
+        id="themeToggleMobile"
+        class="theme-btn"
+        type="button"
+      >
+        Dark / Light
+      </button>
 
     </div>
-  </nav>
+
+    <!-- Tombol Dark / Light desktop -->
+    <button
+      id="themeToggle"
+      class="theme-btn"
+      type="button"
+    >
+      Light/Dark
+    </button>
+
+    <!-- Hamburger -->
+    <button
+      id="menuBtn"
+      class="menu"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      Menu
+    </button>
+
+  </div>
+</nav>
 
 
   <main id="home">
@@ -95,14 +112,18 @@
         </p>
 
         <div class="actions">
-          <a class="btn primary" href="#projects">
-            View Projects
-          </a>
+  <a href="#projects" class="btn primary">
+    View Projects
+  </a>
 
-          <a class="btn" href="#contact">
-            Contact Me
-          </a>
-        </div>
+  <a href="#contact" class="btn">
+    Contact Me
+  </a>
+
+  <a href="cv.pdf" class="btn cv-btn" download>
+    ↓ Download CV
+  </a>
+</div>
 
       </div>
 
