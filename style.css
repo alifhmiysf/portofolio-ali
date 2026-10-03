@@ -310,7 +310,7 @@ h2 {
 .about-profile {
   display: grid;
   grid-template-columns: 320px 1fr;
-  gap: 30px;
+  
   align-items: stretch;
 }
 
