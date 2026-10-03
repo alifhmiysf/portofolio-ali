@@ -307,72 +307,147 @@ h2 {
    9. ABOUT
 ========================================================= */
 
-.about-profile {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  
-  align-items: stretch;
-}
-
-/* Foto */
-
-.profile-photo {
-  width: 320px;
-  height: 430px;
+.about-section {
+  position: relative;
+  min-height: 650px;
   overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--panel);
-  border-radius: 4px;
+  border-top: 1px solid var(--line);
+  background: #181817;
 }
 
-.profile-photo img {
+/* Foto sebagai background */
+
+.about-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.about-background img {
   width: 100%;
   height: 100%;
+  display: block;
+
   object-fit: cover;
-  filter: grayscale(15%) contrast(1.05);
+  object-position: center 30%;
+
+  /* Foto masih terlihat jelas */
+  opacity: 0.62;
+
+  filter:
+    grayscale(10%)
+    contrast(1.03)
+    brightness(0.82);
+
+  transform: scale(1.03);
 }
 
-/* Isi About */
+
+/* Lapisan gelap di atas foto */
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(26, 26, 25, 0.58) 0%,
+      rgba(26, 26, 25, 0.38) 45%,
+      rgba(26, 26, 25, 0.28) 100%
+    );
+}
+
+/* Konten About */
+
+.about-content {
+  position: relative;
+  z-index: 2;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* Teks About */
 
 .about-copy {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: min(760px, 100%);
+}
+
+.about-copy .kicker {
+  margin-bottom: 8px;
+}
+
+.about-copy h2 {
+  margin: 10px 0 28px;
 }
 
 .about-copy > p {
-  margin-top: 0;
+  max-width: 680px;
+  margin: 0;
+
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.8;
 }
 
+
+/* =========================================================
+   ABOUT FACTS
+========================================================= */
+
 .about-copy .facts {
-  margin-top: 28px;
+  margin-top: 40px;
 }
 
 .facts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
 .fact {
-  padding: 24px;
-  border: 1px solid var(--line);
-  background: transparent;
+  padding: 22px;
+
+  border: 1px solid rgba(232, 229, 223, 0.12);
+
+  background: rgba(26, 26, 25, 0.42);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
   border-radius: 4px;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.fact:hover {
+  background: rgba(26, 26, 25, 0.62);
+  border-color: var(--accent);
+  transform: translateY(-3px);
 }
 
 .fact b {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
+
   font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 400;
 }
 
 .fact span {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 
@@ -388,9 +463,11 @@ h2 {
 
 .project {
   min-height: 320px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   background: transparent;
 }
 
@@ -416,6 +493,7 @@ h2 {
   padding: 4px 12px;
   border: 1px solid var(--line);
   border-radius: 2px;
+
   color: var(--muted);
   font-size: 12px;
 }
@@ -424,6 +502,7 @@ h2 {
 .credential-link {
   display: inline-block;
   margin-top: 22px;
+
   color: var(--accent);
   font-size: 13px;
   font-weight: 500;
@@ -456,11 +535,15 @@ h2 {
   width: 54px;
   height: 54px;
   flex: 0 0 54px;
+
   display: grid;
   place-items: center;
+
   border: 1px solid var(--line);
   border-radius: 4px;
+
   color: var(--accent);
+
   font-family: "Cormorant Garamond", serif;
   font-size: 22px;
   font-style: italic;
@@ -494,9 +577,11 @@ h2 {
 
 .skill {
   padding: 10px 24px;
+
   border: 1px solid var(--line);
   background: transparent;
   border-radius: 4px;
+
   font-size: 14px;
 }
 
@@ -513,38 +598,48 @@ h2 {
 
 .contact-box {
   position: relative;
+
   display: flex;
   align-items: center;
+
   gap: 20px;
   min-height: 150px;
   padding: 28px;
+
   border: 1px solid var(--line);
   background: var(--panel);
   border-radius: 4px;
+
   overflow: hidden;
+
   transition:
     transform 0.3s ease,
     border-color 0.3s ease,
     background-color 0.3s ease;
 }
 
-/* Dekorasi lingkaran */
-
 .contact-box::after {
   content: "";
+
   position: absolute;
+
   width: 90px;
   height: 90px;
+
   right: -30px;
   bottom: -30px;
+
   border-radius: 50%;
+
   background: var(--accent);
   opacity: 0.05;
+
   transition: transform 0.4s ease;
 }
 
 .contact-box:hover {
   transform: translateY(-5px);
+
   border-color: var(--accent);
   background: var(--panel2);
 }
@@ -554,21 +649,27 @@ h2 {
 }
 
 
-/* Icon */
+/* Contact icon */
 
 .contact-icon {
   flex: 0 0 58px;
+
   width: 58px;
   height: 58px;
+
   display: grid;
   place-items: center;
+
   border: 1px solid var(--line);
   border-radius: 50%;
+
   color: var(--accent);
+
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
   font-weight: 600;
   font-style: italic;
+
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
@@ -581,9 +682,6 @@ h2 {
   color: var(--bg);
 }
 
-
-/* Contact text */
-
 .contact-info {
   min-width: 0;
 }
@@ -594,16 +692,19 @@ h2 {
 
 .contact-info h3 {
   margin: 0;
+
   font-family: "Cormorant Garamond", serif;
   font-size: 25px;
   font-weight: 500;
   line-height: 1.15;
+
   overflow-wrap: anywhere;
 }
 
 .contact-info span {
   display: block;
   margin-top: 8px;
+
   color: var(--muted);
   font-size: 12px;
 }
@@ -616,13 +717,18 @@ h2 {
 footer {
   position: relative;
   z-index: 5;
+
   display: flex;
   justify-content: space-between;
+
   padding: 40px 0 60px;
   margin-top: 60px;
+
   border-top: 1px solid var(--line);
+
   background: var(--bg);
   color: var(--muted);
+
   font-size: 13px;
 }
 
@@ -637,15 +743,20 @@ footer {
 
   .links {
     display: none;
+
     position: absolute;
     top: 72px;
     left: 0;
     right: 0;
+
     flex-direction: column;
     gap: 20px;
+
     padding: 20px;
+
     background: var(--bg);
     border-bottom: 1px solid var(--line);
+
     text-align: center;
   }
 
@@ -693,29 +804,48 @@ footer {
 
   /* About */
 
-  .about-profile {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .about-section {
+    min-height: 700px;
   }
 
-  .profile-photo {
+  .about-content {
+    min-height: 700px;
+    align-items: center;
+  }
+
+  .about-background img {
+    object-position: center top;
+    opacity: 0.24;
+    filter:
+      grayscale(30%)
+      contrast(1.05)
+      brightness(0.48);
+  }
+
+  .about-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(26, 26, 25, 0.84) 0%,
+        rgba(26, 26, 25, 0.90) 55%,
+        rgba(26, 26, 25, 0.97) 100%
+      );
+  }
+
+  .about-copy {
     width: 100%;
-    max-width: 320px;
-    height: 400px;
-    margin: 0 auto;
   }
 
-  .profile-photo img {
-    width: 100%;
-    height: 100%;
-    min-height: 0;
+  .about-copy > p {
+    font-size: 16px;
   }
-
-
-  /* Facts */
 
   .facts {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .fact {
+    padding: 20px;
   }
 
 
@@ -786,14 +916,62 @@ footer {
     height: 330px;
   }
 
-  .facts {
-    grid-template-columns: 1fr;
+
+  /* About mobile */
+
+  .about-section {
+    min-height: 760px;
   }
 
-  .profile-photo {
-    max-width: 280px;
-    height: 360px;
+  .about-content {
+    min-height: 760px;
   }
+
+  .about-background img {
+    object-position: 50% top;
+    opacity: 0.22;
+    transform: scale(1.08);
+  }
+
+  .about-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(26, 26, 25, 0.82) 0%,
+        rgba(26, 26, 25, 0.92) 45%,
+        rgba(26, 26, 25, 0.98) 100%
+      );
+  }
+
+  .about-copy h2 {
+    margin-bottom: 22px;
+  }
+
+  .about-copy > p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .facts {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 30px !important;
+  }
+
+  .fact {
+    padding: 18px;
+  }
+
+  .fact b {
+    font-size: 23px;
+  }
+
+  .fact span {
+    font-size: 12px;
+  }
+
+
+  /* Contact */
 
   .contact-box {
     gap: 14px;

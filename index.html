@@ -1,389 +1,898 @@
 <!DOCTYPE html>
 <html lang="id" data-theme="dark">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ali Fahmi Yusuf — Backend Engineer focused on secure, production-ready API systems.">
-<title>Ali Fahmi Yusuf — Backend Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Menggunakan font bergaya editorial dan humanis -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta
+    name="description"
+    content="Ali Fahmi Yusuf — Backend Engineer focused on secure, production-ready API systems."
+  >
+
+  <title>Ali Fahmi Yusuf — Backend Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Model Viewer -->
+  <script
+    type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+  ></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<nav>
-  <div class="container nav">
-    <a class="logo" href="#home">Ali Fahmi <span>Yusuf</span></a>
-    <div class="links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#certificates">Certifications</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-      <button class="theme-btn" id="themeToggle">Light / Dark</button>
-    </div>
-    <div style="display:flex; gap:10px;">
-      <button class="theme-btn" id="themeToggleMobile">L/D</button>
-      <button class="menu" id="menuBtn">Menu</button>
-    </div>
-  </div>
-</nav>
 
-<main id="home">
-  <section class="hero container">
-    <div class="hero-content">
-      <div class="eyebrow">Backend Engineer</div>
-      <h1>Ali Fahmi<br><em>Yusuf.</em></h1>
-      <p>Backend Engineer focused on secure, production-ready API systems. Experienced with Laravel, authentication &amp; authorization, CI/CD pipelines, and Docker deployment.</p>
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <nav>
+    <div class="container nav">
 
-      <div class="actions">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn" href="#contact">Contact Me</a>
-      </div>
-    </div>
-
-    <div class="model-wrap">
-      <model-viewer
-        src="RetroComputerBooth.glb"
-        alt="3D Retro Computer Booth"
-        auto-rotate
-        camera-controls
-        disable-zoom
-        shadow-intensity="1"
-        environment-image="neutral"
-        exposure="1">
-      </model-viewer>
-    </div>
-  </section>
-
-  <div class="about about-profile">
-
-  <div class="profile-photo">
-    <img src="profile.jpg" alt="Ali Fahmi Yusuf">
-  </div>
-
-  <div class="card about-copy">
-    <p>
-      I am a Backend Engineer focused on building secure and maintainable
-      systems. I care deeply about authentication, authorization, data
-      integrity, automated testing, and clean architecture.
-    </p>
-
-    <div class="facts">
-      <div class="fact">
-        <b>Laravel</b>
-        <span>Backend &amp; API development</span>
-      </div>
-
-      <div class="fact">
-        <b>Docker</b>
-        <span>Deployment &amp; containerization</span>
-      </div>
-
-      <div class="fact">
-        <b>Security</b>
-        <span>Auth &amp; authorization</span>
-      </div>
-
-      <div class="fact">
-        <b>CI/CD</b>
-        <span>Automated delivery</span>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-  <section id="projects">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">02 / Selected Work</div>
-          <h2>Selected Projects</h2>
-        </div>
-        <p>Backend projects focused on APIs, microservices, authentication, deployment, and production-ready architecture.</p>
-      </div>
-
-      <div class="projects">
-        <article class="card project">
-          <div>
-            <div class="num">Nº 01</div>
-            <h3>Expense API</h3>
-            <p>Secure REST API for expense tracking with strong access control and production-ready architecture.</p>
-          </div>
-          <div>
-            <div class="tags">
-              <span class="tag">Laravel</span>
-              <span class="tag">API</span>
-              <span class="tag">Docker</span>
-            </div>
-            <a class="project-link" href="https://alifhmiysf.github.io/portoguy/projects/expense-api.html" target="_blank" rel="noopener">View case study →</a>
-          </div>
-        </article>
-
-        <article class="card project">
-          <div>
-            <div class="num">Nº 02</div>
-            <h3>E-Commerce Microservices</h3>
-            <p>Microservices-based e-commerce backend using Laravel, Docker, and Nginx API Gateway with inter-service communication and database isolation.</p>
-          </div>
-          <div>
-            <div class="tags">
-              <span class="tag">Laravel</span>
-              <span class="tag">Microservices</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Nginx</span>
-            </div>
-            <a class="project-link" href="https://alifhmiysf.github.io/portoguy/projects/ecommerce-microservices-system.html" target="_blank" rel="noopener">View case study →</a>
-          </div>
-        </article>
-
-        <article class="card project">
-          <div>
-            <div class="num">Nº 03</div>
-            <h3>Auth API Go</h3>
-            <p>Secure authentication REST API built with Go and PostgreSQL, implementing JWT authentication, password hashing, middleware, and layered architecture.</p>
-          </div>
-          <div>
-            <div class="tags">
-              <span class="tag">Go</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">JWT</span>
-              <span class="tag">bcrypt</span>
-              <span class="tag">Docker</span>
-            </div>
-            <a class="project-link" href="https://alifhmiysf.github.io/portoguy/projects/auth-api.html" target="_blank" rel="noopener">View case study →</a>
-          </div>
-        </article>
-
-        <article class="card project">
-          <div>
-            <div class="num">Nº 04</div>
-            <h3>Portfolio Website</h3>
-            <p>Clean engineering portfolio with scroll-based animation and an interactive 3D model.</p>
-          </div>
-          <div>
-            <div class="tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">3D</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="certificates">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">03 / Credentials</div>
-          <h2>Licenses &amp; Certifications</h2>
-        </div>
-        <p>Selected certifications in JavaScript, SQL, and data visualization.</p>
-      </div>
-
-      <div class="certs">
-        <article class="card cert">
-          <div class="cert-icon">01</div>
-          <div>
-            <h3>Data Visualization</h3>
-            <p>freeCodeCamp · Issued Apr 2025</p>
-            <p>Credential ID: alifhmiysf-dv</p>
-            <a class="credential-link" href="https://freecodecamp.org/certification/alifhmiysf/data-visualization" target="_blank" rel="noopener">Show credential →</a>
-          </div>
-        </article>
-
-        <article class="card cert">
-          <div class="cert-icon">02</div>
-          <div>
-            <h3>JavaScript Algorithms and Data Structures</h3>
-            <p>freeCodeCamp · Issued Apr 2025</p>
-            <p>Credential ID: alifhmiysf-jaads</p>
-            <a class="credential-link" href="https://freecodecamp.org/certification/alifhmiysf/javascript-algorithms-and-data-structures-v8" target="_blank" rel="noopener">Show credential →</a>
-          </div>
-        </article>
-
-        <article class="card cert">
-          <div class="cert-icon">03</div>
-          <div>
-            <h3>JavaScript Basic</h3>
-            <p>HackerRank · Issued Mar 2025</p>
-            <p>Credential ID: 4COA371C0D9B</p>
-            <a class="credential-link" href="https://www.hackerrank.com/certificates/4c0a371c0d9b" target="_blank" rel="noopener">Show credential →</a>
-          </div>
-        </article>
-
-        <article class="card cert">
-          <div class="cert-icon">04</div>
-          <div>
-            <h3>SQL (Basic)</h3>
-            <p>HackerRank · Issued Jan 2025</p>
-            <p>Credential ID: DC2A641824ED</p>
-            <a class="credential-link" href="https://www.hackerrank.com/" target="_blank" rel="noopener">View credential →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">04 / Stack</div>
-          <h2>Technical Skills</h2>
-        </div>
-        <p>Technologies and practices used across backend development and software engineering.</p>
-      </div>
-
-      <div class="skills">
-        <span class="skill">Laravel</span>
-        <span class="skill">PHP</span>
-        <span class="skill">Go</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">PostgreSQL</span>
-        <span class="skill">MySQL</span>
-        <span class="skill">REST API</span>
-        <span class="skill">JWT</span>
-        <span class="skill">Docker</span>
-        <span class="skill">Nginx</span>
-        <span class="skill">CI/CD</span>
-        <span class="skill">Authentication</span>
-        <span class="skill">Authorization</span>
-        <span class="skill">Microservices</span>
-        <span class="skill">Git</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="education">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">05 / Education</div>
-          <h2>Education</h2>
-        </div>
-      </div>
-
-      <div class="certs">
-        <article class="card cert">
-          <div class="cert-icon">01</div>
-          <div>
-            <h3>Universitas Teknologi Digital Indonesia</h3>
-            <p>Bachelor of Informatics · Informatics</p>
-            <p>Sep 2024 – Present</p>
-            <p>Studying foundational computer science topics, including algorithms, computer networks, and programming.</p>
-          </div>
-        </article>
-
-        <article class="card cert">
-          <div class="cert-icon">02</div>
-          <div>
-            <h3>SMK Muhammadiyah 1 Yogyakarta</h3>
-            <p>Vocational School Graduate · Software Engineering</p>
-            <p>Jul 2021 – May 2024</p>
-            <p>Focus on web development, programming, and software design principles.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
- <section id="contact">
-  <div class="container">
-
-    <div class="section-head">
-      <div>
-        <div class="kicker">06 / Contact</div>
-        <h2>Let's Build Something.</h2>
-      </div>
-
-      <p>
-        Have a project, idea, or backend system in mind?
-        Let's connect and build something reliable together.
-      </p>
-    </div>
-
-    <div class="contact">
-
-      <!-- Email -->
-      <a
-        class="contact-box"
-        href="mailto:alifahmiyusuf631@gmail.com"
-      >
-        <div class="contact-icon">@</div>
-
-        <div class="contact-info">
-          <div class="kicker">Email</div>
-          <h3>alifahmiyusuf631@gmail.com</h3>
-          <span>Send me an email →</span>
-        </div>
+      <a class="logo" href="#home">
+        <span>Ali</span> Fahmi Yusuf
       </a>
 
-      <!-- WhatsApp -->
-      <a
-        class="contact-box"
-        href="https://wa.me/6287723400208"
-        target="_blank"
-        rel="noopener"
-      >
-        <div class="contact-icon">WA</div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
 
-        <div class="contact-info">
-          <div class="kicker">WhatsApp</div>
-          <h3>0877 2340 0208</h3>
-          <span>Start a conversation →</span>
-        </div>
-      </a>
+        <button class="theme-btn" id="themeToggle">
+          Light / Dark
+        </button>
+      </div>
 
-      <!-- GitHub -->
-      <a
-        class="contact-box"
-        href="https://github.com/alifhmiysf"
-        target="_blank"
-        rel="noopener"
-      >
-        <div class="contact-icon">GH</div>
+      <div class="nav-mobile-actions">
+        <button class="theme-btn" id="themeToggleMobile">
+          L/D
+        </button>
 
-        <div class="contact-info">
-          <div class="kicker">GitHub</div>
-          <h3>alifhmiysf</h3>
-          <span>View my repositories →</span>
-        </div>
-      </a>
-
-      <!-- LinkedIn -->
-      <a
-        class="contact-box"
-        href="https://www.linkedin.com/in/alifhmiysf/"
-        target="_blank"
-        rel="noopener"
-      >
-        <div class="contact-icon">in</div>
-
-        <div class="contact-info">
-          <div class="kicker">LinkedIn</div>
-          <h3>Ali Fahmi Yusuf</h3>
-          <span>Connect with me →</span>
-        </div>
-      </a>
+        <button class="menu" id="menuBtn">
+          Menu
+        </button>
+      </div>
 
     </div>
+  </nav>
 
-  </div>
-</section>
-</main>
-<footer class="container"><span>© 2026 Ali Fahmi Yusuf.</span><span>Backend Engineer · Built with clean code.</span></footer>
 
-<!-- JAVASCRIPT -->
-<script src="script.js"></script>
+  <main id="home">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero container">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          Backend Engineer
+        </div>
+
+        <h1>
+          <em>Ali</em> Fahmi<br>
+          Yusuf.
+        </h1>
+
+        <p>
+          Backend Engineer focused on secure, production-ready API systems.
+          Experienced with Laravel, authentication &amp; authorization,
+          CI/CD pipelines, and Docker deployment.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="#projects">
+            View Projects
+          </a>
+
+          <a class="btn" href="#contact">
+            Contact Me
+          </a>
+        </div>
+
+      </div>
+
+
+      <!-- 3D MODEL -->
+      <div class="model-wrap">
+
+        <model-viewer
+          src="RetroComputerBooth.glb"
+          alt="3D Retro Computer Booth"
+          auto-rotate
+          camera-controls
+          disable-zoom
+          shadow-intensity="1"
+          environment-image="neutral"
+          exposure="1">
+        </model-viewer>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section id="about" class="about-section">
+
+      <!-- Background foto -->
+      <div class="about-background">
+        <img
+          src="profile.jpg"
+          alt=""
+          aria-hidden="true"
+        >
+      </div>
+
+      <!-- Overlay agar foto redup -->
+      <div class="about-overlay"></div>
+
+
+      <div class="container about-content">
+
+        <div class="about-copy">
+
+          <div class="kicker">
+            01 / About
+          </div>
+
+          <h2>
+            About Me
+          </h2>
+
+          <p>
+            I am a Backend Engineer focused on building secure and
+            maintainable systems. I care deeply about authentication,
+            authorization, data integrity, automated testing, and
+            clean architecture.
+          </p>
+
+
+          <!-- About Facts -->
+          <div class="facts">
+
+            <div class="fact">
+              <b>Laravel</b>
+              <span>
+                Backend &amp; API development
+              </span>
+            </div>
+
+            <div class="fact">
+              <b>Docker</b>
+              <span>
+                Deployment &amp; containerization
+              </span>
+            </div>
+
+            <div class="fact">
+              <b>Security</b>
+              <span>
+                Auth &amp; authorization
+              </span>
+            </div>
+
+            <div class="fact">
+              <b>CI/CD</b>
+              <span>
+                Automated delivery
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+    <section id="projects">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <div class="kicker">
+              02 / Selected Work
+            </div>
+
+            <h2>
+              Selected Projects
+            </h2>
+          </div>
+
+          <p>
+            Backend projects focused on APIs, microservices,
+            authentication, deployment, and production-ready architecture.
+          </p>
+
+        </div>
+
+
+        <div class="projects">
+
+          <!-- Project 01 -->
+          <article class="card project">
+
+            <div>
+              <div class="num">
+                Nº 01
+              </div>
+
+              <h3>
+                Expense API
+              </h3>
+
+              <p>
+                Secure REST API for expense tracking with strong
+                access control and production-ready architecture.
+              </p>
+            </div>
+
+            <div>
+
+              <div class="tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">API</span>
+                <span class="tag">Docker</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://alifhmiysf.github.io/portoguy/projects/expense-api.html"
+                target="_blank"
+                rel="noopener"
+              >
+                View case study →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Project 02 -->
+          <article class="card project">
+
+            <div>
+              <div class="num">
+                Nº 02
+              </div>
+
+              <h3>
+                E-Commerce Microservices
+              </h3>
+
+              <p>
+                Microservices-based e-commerce backend using Laravel,
+                Docker, and Nginx API Gateway with inter-service
+                communication and database isolation.
+              </p>
+            </div>
+
+            <div>
+
+              <div class="tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">Microservices</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Nginx</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://alifhmiysf.github.io/portoguy/projects/ecommerce-microservices-system.html"
+                target="_blank"
+                rel="noopener"
+              >
+                View case study →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Project 03 -->
+          <article class="card project">
+
+            <div>
+              <div class="num">
+                Nº 03
+              </div>
+
+              <h3>
+                Auth API Go
+              </h3>
+
+              <p>
+                Secure authentication REST API built with Go and
+                PostgreSQL, implementing JWT authentication,
+                password hashing, middleware, and layered architecture.
+              </p>
+            </div>
+
+            <div>
+
+              <div class="tags">
+                <span class="tag">Go</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">JWT</span>
+                <span class="tag">bcrypt</span>
+                <span class="tag">Docker</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://alifhmiysf.github.io/portoguy/projects/auth-api.html"
+                target="_blank"
+                rel="noopener"
+              >
+                View case study →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Project 04 -->
+          <article class="card project">
+
+            <div>
+              <div class="num">
+                Nº 04
+              </div>
+
+              <h3>
+                Portfolio Website
+              </h3>
+
+              <p>
+                Clean engineering portfolio with scroll-based animation
+                and an interactive 3D model.
+              </p>
+            </div>
+
+            <div>
+
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">3D</span>
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CERTIFICATIONS
+    ========================== -->
+    <section id="certificates">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <div class="kicker">
+              03 / Credentials
+            </div>
+
+            <h2>
+              Licenses &amp; Certifications
+            </h2>
+          </div>
+
+          <p>
+            Selected certifications in JavaScript, SQL,
+            and data visualization.
+          </p>
+
+        </div>
+
+
+        <div class="certs">
+
+          <!-- Certificate 01 -->
+          <article class="card cert">
+
+            <div class="cert-icon">
+              01
+            </div>
+
+            <div>
+
+              <h3>
+                Data Visualization
+              </h3>
+
+              <p>
+                freeCodeCamp · Issued Apr 2025
+              </p>
+
+              <p>
+                Credential ID: alifhmiysf-dv
+              </p>
+
+              <a
+                class="credential-link"
+                href="https://freecodecamp.org/certification/alifhmiysf/data-visualization"
+                target="_blank"
+                rel="noopener"
+              >
+                Show credential →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Certificate 02 -->
+          <article class="card cert">
+
+            <div class="cert-icon">
+              02
+            </div>
+
+            <div>
+
+              <h3>
+                JavaScript Algorithms and Data Structures
+              </h3>
+
+              <p>
+                freeCodeCamp · Issued Apr 2025
+              </p>
+
+              <p>
+                Credential ID: alifhmiysf-jaads
+              </p>
+
+              <a
+                class="credential-link"
+                href="https://freecodecamp.org/certification/alifhmiysf/javascript-algorithms-and-data-structures-v8"
+                target="_blank"
+                rel="noopener"
+              >
+                Show credential →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Certificate 03 -->
+          <article class="card cert">
+
+            <div class="cert-icon">
+              03
+            </div>
+
+            <div>
+
+              <h3>
+                JavaScript Basic
+              </h3>
+
+              <p>
+                HackerRank · Issued Mar 2025
+              </p>
+
+              <p>
+                Credential ID: 4COA371C0D9B
+              </p>
+
+              <a
+                class="credential-link"
+                href="https://www.hackerrank.com/certificates/4c0a371c0d9b"
+                target="_blank"
+                rel="noopener"
+              >
+                Show credential →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Certificate 04 -->
+          <article class="card cert">
+
+            <div class="cert-icon">
+              04
+            </div>
+
+            <div>
+
+              <h3>
+                SQL (Basic)
+              </h3>
+
+              <p>
+                HackerRank · Issued Jan 2025
+              </p>
+
+              <p>
+                Credential ID: DC2A641824ED
+              </p>
+
+              <a
+                class="credential-link"
+                href="https://www.hackerrank.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                View credential →
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+    <section id="skills">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <div class="kicker">
+              04 / Stack
+            </div>
+
+            <h2>
+              Technical Skills
+            </h2>
+          </div>
+
+          <p>
+            Technologies and practices used across backend
+            development and software engineering.
+          </p>
+
+        </div>
+
+
+        <div class="skills">
+
+          <span class="skill">Laravel</span>
+          <span class="skill">PHP</span>
+          <span class="skill">Go</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">PostgreSQL</span>
+          <span class="skill">MySQL</span>
+          <span class="skill">REST API</span>
+          <span class="skill">JWT</span>
+          <span class="skill">Docker</span>
+          <span class="skill">Nginx</span>
+          <span class="skill">CI/CD</span>
+          <span class="skill">Authentication</span>
+          <span class="skill">Authorization</span>
+          <span class="skill">Microservices</span>
+          <span class="skill">Git</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+    <section id="education">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <div class="kicker">
+              05 / Education
+            </div>
+
+            <h2>
+              Education
+            </h2>
+          </div>
+
+        </div>
+
+
+        <div class="certs">
+
+          <!-- Education 01 -->
+          <article class="card cert">
+
+            <div class="cert-icon">
+              01
+            </div>
+
+            <div>
+
+              <h3>
+                Universitas Teknologi Digital Indonesia
+              </h3>
+
+              <p>
+                Bachelor of Informatics · Informatics
+              </p>
+
+              <p>
+                Sep 2024 – Present
+              </p>
+
+              <p>
+                Studying foundational computer science topics,
+                including algorithms, computer networks,
+                and programming.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- Education 02 -->
+          <article class="card cert">
+
+            <div class="cert-icon">
+              02
+            </div>
+
+            <div>
+
+              <h3>
+                SMK Muhammadiyah 1 Yogyakarta
+              </h3>
+
+              <p>
+                Vocational School Graduate · Software Engineering
+              </p>
+
+              <p>
+                Jul 2021 – May 2024
+              </p>
+
+              <p>
+                Focus on web development, programming,
+                and software design principles.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section id="contact">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <div class="kicker">
+              06 / Contact
+            </div>
+
+            <h2>
+              Let's Build Something.
+            </h2>
+          </div>
+
+          <p>
+            Have a project, idea, or backend system in mind?
+            Let's connect and build something reliable together.
+          </p>
+
+        </div>
+
+
+        <div class="contact">
+
+          <!-- Email -->
+          <a
+            class="contact-box"
+            href="mailto:alifahmiyusuf631@gmail.com"
+          >
+
+            <div class="contact-icon">
+              @
+            </div>
+
+            <div class="contact-info">
+
+              <div class="kicker">
+                Email
+              </div>
+
+              <h3>
+                alifahmiyusuf631@gmail.com
+              </h3>
+
+              <span>
+                Send me an email →
+              </span>
+
+            </div>
+
+          </a>
+
+
+          <!-- WhatsApp -->
+          <a
+            class="contact-box"
+            href="https://wa.me/6287723400208"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <div class="contact-icon">
+              WA
+            </div>
+
+            <div class="contact-info">
+
+              <div class="kicker">
+                WhatsApp
+              </div>
+
+              <h3>
+                0877 2340 0208
+              </h3>
+
+              <span>
+                Start a conversation →
+              </span>
+
+            </div>
+
+          </a>
+
+
+          <!-- GitHub -->
+          <a
+            class="contact-box"
+            href="https://github.com/alifhmiysf"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <div class="contact-icon">
+              GH
+            </div>
+
+            <div class="contact-info">
+
+              <div class="kicker">
+                GitHub
+              </div>
+
+              <h3>
+                alifhmiysf
+              </h3>
+
+              <span>
+                View my repositories →
+              </span>
+
+            </div>
+
+          </a>
+
+
+          <!-- LinkedIn -->
+          <a
+            class="contact-box"
+            href="https://www.linkedin.com/in/alifhmiysf/"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <div class="contact-icon">
+              in
+            </div>
+
+            <div class="contact-info">
+
+              <div class="kicker">
+                LinkedIn
+              </div>
+
+              <h3>
+                Ali Fahmi Yusuf
+              </h3>
+
+              <span>
+                Connect with me →
+              </span>
+
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="container">
+
+    <span>
+      © 2026 Ali Fahmi Yusuf.
+    </span>
+
+    <span>
+      Backend Engineer · Built with clean code.
+    </span>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 
 </body>
 </html>
